@@ -9,8 +9,8 @@
 // ===== 配置区 =====
 
 // ---- WiFi 配置 ----
-const char* WIFI_SSID     = "enpty";
-const char* WIFI_PASSWORD = "ZC20051215";
+const char* WIFI_SSID     = "你的WiFi名称";
+const char* WIFI_PASSWORD = "你的WiFi密码";
 
 // ---- 服务器端口 ----
 const int SERVER_PORT = 80;
@@ -31,13 +31,13 @@ struct User {
 };
 
 User users[] = {
-  {"Enpty", "ZC20051215", "", true },
+  {"admin", "admin123", "", true } ,
   {"usERWDFW", "paFSFSSEF", "", false}
 };
 
 // ----  Maa-HTTP 电脑 IP 配置 ----
 // ⚠️ 运行 Maa-HTTP 的那台电脑的局域网 IP（不是 ESP8266 的 IP）
-const char* MAA_HTTP_IP   = "192.168.31.169";  // 运行 Java-HTTP 的电脑局域网 IP
+const char* MAA_HTTP_IP   = "192.168.31.100";  // 运行 Java-HTTP 的电脑局域网 IP
 const int   MAA_HTTP_PORT = 8848;              // Java-HTTP 端口，默认 8848
 const char* MAA_WS_PATH   = "/API/V1";         // WebSocket 路径，默认不用改
 
