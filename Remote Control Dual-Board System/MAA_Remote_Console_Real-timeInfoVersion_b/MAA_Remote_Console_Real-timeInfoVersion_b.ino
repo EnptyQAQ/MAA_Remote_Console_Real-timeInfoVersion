@@ -10,8 +10,9 @@ SoftwareSerial fromA(12, 14);
 // ============================================================
 // =================== ⚙️ 配置区 ===================
 // ============================================================
-const char* WIFI_SSID     = "enpty";
-const char* WIFI_PASSWORD = "ZC20051215";
+const char* WIFI_SSID     = "你的WiFi名称";
+const char* WIFI_PASSWORD = "你的WiFi密码";
+
 
 const char* MAA_HTTP_IP   = "192.168.31.169";  
 const int   MAA_HTTP_PORT = 8848;              
