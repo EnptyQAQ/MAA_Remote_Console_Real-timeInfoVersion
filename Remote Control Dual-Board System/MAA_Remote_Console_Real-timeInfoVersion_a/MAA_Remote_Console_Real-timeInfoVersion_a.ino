@@ -11,8 +11,9 @@ SoftwareSerial toB(12, 14);
 // ============================================================
 // =================== ⚙️ 配置区 ===================
 // ============================================================
-const char* WIFI_SSID     = "enpty";
-const char* WIFI_PASSWORD = "ZC20051215";
+const char* WIFI_SSID     = "你的WiFi名称";
+const char* WIFI_PASSWORD = "你的WiFi密码";
+
 const int   SERVER_PORT   = 80;
 
 const int MAX_SESSIONS  = 3;
@@ -20,8 +21,8 @@ const unsigned long SESSION_TIMEOUT_MS = 30UL * 60UL * 1000UL;
 
 struct User { String username; String password; bool isAdmin; };
 User users[] = {
-  {"Enpty",    "ZC20051215", true },
-  {"usERWDFW", "paFSFSSEF",  false}
+ {"admin", "admin123", "", true } ,
+  {"usERWDFW", "paFSFSSEF", "", false}
 };
 const int USER_COUNT = sizeof(users) / sizeof(users[0]);
 // ============================================================
